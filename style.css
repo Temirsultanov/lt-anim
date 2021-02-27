@@ -1,0 +1,174 @@
+body{
+    margin: 0;
+    box-sizing: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    --black: #000000;
+    --white: #ffffff;
+    --yellow: #FFDF37;
+    overflow: hidden;
+    --blue: #0087D2;
+    perspective: 100px;
+    transform-style: preserve-3d;
+}
+
+
+
+#recttop{
+    transform: translateY(-80px);
+    animation: 3s recttop forwards;
+    animation-delay: 2s;
+}  
+@keyframes recttop{
+    0%{
+        transform: translateY(-80px);
+    }
+    18%{
+        transform: translateY(0px);
+    }
+    17%{
+        fill: var(--yellow);
+    }
+    18%{
+        fill: white;
+    }
+    100%{
+        fill: white;
+    }
+
+}
+#rectbottom{
+    transform: translateY(-80px);
+    animation: 3s rectbottom forwards;
+    animation-delay: 2s;
+}
+@keyframes rectbottom{
+    0%{
+        transform: translateY(-80px);
+    }
+    8%{
+        transform: translateY(-80px);
+    }
+    17%{
+        fill: var(--yellow);
+    }
+    18%{
+        fill: white;
+    }
+    26%{
+        transform: translateY(0px);
+    }
+    100%{
+        fill: white;
+    }
+}
+
+
+#rectmiddle{
+    transform: translateX(-80px);
+    animation: 3s rectmiddle forwards;
+    animation-delay: 2s;
+}   
+@keyframes rectmiddle{
+    0%{
+        transform: translateX(-80px);
+    }
+    4%{
+        transform: translateX(-80px);
+    }
+    17%{
+        fill: var(--yellow);
+    }
+    18%{
+        fill: white;
+    }
+    22%{
+        transform: translateX(0px);
+    }
+    100%{
+        fill: white;
+    }
+}
+
+
+
+
+#t{
+    fill:  var(--white);
+    animation: 3s t forwards;
+    animation-delay: 2s;
+}
+@keyframes t{
+    0%{
+        fill: var(--white);
+    }
+    17%{
+        fill: var(--white);
+    }
+    72%{
+        fill: var(--black);
+    }
+    100%{
+        fill: var(--white);
+    }
+}
+
+.logo{
+    margin-top: 7px;
+}
+.pnglogo{
+    width: 99px;
+    height: 86px;
+    margin-top: 5px;
+    margin-left: -1px;
+    position: absolute;
+    animation: 10s logo forwards;
+    animation-delay: 2s;
+    transform: translateZ(0);
+    opacity: 0;
+}
+
+@keyframes logo{
+    0%{
+        transform: translateZ(0) translateY(0px);
+    }
+    20%{
+        opacity: 0;
+    }
+    21%{
+        opacity: 1;
+    }
+    30%{
+        transform: translateZ(0) translateY(0px);
+    }
+    80%{
+        transform: translateZ(100px) translateY(0px);
+        opacity: 1;
+    }
+    100%{
+        transform: translateZ(100px) translateY(0px);
+        opacity: 1;
+    }
+
+}
+#l{
+    fill: var(--white);
+    animation: 3s l forwards;
+    animation-delay: 2s;
+}
+@keyframes l{
+    0%{
+        fill: var(--white);
+    }
+    17%{
+        fill: var(--white);
+    }
+    72%{
+        fill: var(--black);
+    }
+    100%{
+        fill: var(--white);
+    }
+}
