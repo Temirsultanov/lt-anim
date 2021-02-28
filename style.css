@@ -18,7 +18,7 @@ body{
 
 #recttop{
     transform: translateY(-80px);
-    animation: 3s recttop forwards;
+    animation: 3s recttop forwards infinite;
     animation-delay: 2s;
 }  
 @keyframes recttop{
@@ -29,7 +29,7 @@ body{
         transform: translateY(0px);
     }
     17%{
-        fill: var(--yellow);
+        fill: var(--blue);
     }
     18%{
         fill: white;
@@ -41,7 +41,7 @@ body{
 }
 #rectbottom{
     transform: translateY(-80px);
-    animation: 3s rectbottom forwards;
+    animation: 3s rectbottom forwards infinite;
     animation-delay: 2s;
 }
 @keyframes rectbottom{
@@ -52,7 +52,7 @@ body{
         transform: translateY(-80px);
     }
     17%{
-        fill: var(--yellow);
+        fill: var(--blue);
     }
     18%{
         fill: white;
@@ -68,7 +68,7 @@ body{
 
 #rectmiddle{
     transform: translateX(-80px);
-    animation: 3s rectmiddle forwards;
+    animation: 3s rectmiddle forwards infinite;
     animation-delay: 2s;
 }   
 @keyframes rectmiddle{
@@ -79,7 +79,7 @@ body{
         transform: translateX(-80px);
     }
     17%{
-        fill: var(--yellow);
+        fill: var(--blue);
     }
     18%{
         fill: white;
@@ -97,7 +97,7 @@ body{
 
 #t{
     fill:  var(--white);
-    animation: 3s t forwards;
+    animation: 3s t forwards infinite;
     animation-delay: 2s;
 }
 @keyframes t{
@@ -117,7 +117,7 @@ body{
 
 #l{
     fill: var(--white);
-    animation: 3s l forwards;
+    animation: 3s l forwards infinite;
     animation-delay: 2s;
 }
 @keyframes l{
